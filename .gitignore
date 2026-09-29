@@ -11,6 +11,7 @@ __pycache__/
 env/
 venv/
 ENV/
+.venv/
 build/
 develop-eggs/
 dist/
@@ -46,8 +47,12 @@ models/*.keras
 models/*.h5
 
 # Data and generated files
-dataset/midi/
-generated/
+dataset/midi/*
+!dataset/midi/.gitkeep
+dataset/processed_data.npz
+generated/*
+!generated/.gitkeep
+models/vocabulary.json
 *.mid
 *.midi
 *.wav
